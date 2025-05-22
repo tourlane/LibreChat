@@ -87,13 +87,12 @@ registration:
 #   refillIntervalUnit: 'days'
 #   refillAmount: 10000
 
-# speech:
-#   tts:
-#     openai:
-#       url: ''
-#       apiKey: '${TTS_API_KEY}'
-#       model: ''
-#       voices: ['']
+#Using openai whisper for STT
+speech:
+  stt:
+    openai:
+      apiKey: '${OPENAI_API_KEY}'
+      model: 'whisper-1'
 
 #
 #   stt:

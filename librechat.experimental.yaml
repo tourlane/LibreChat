@@ -87,19 +87,23 @@ registration:
 #   refillIntervalUnit: 'days'
 #   refillAmount: 10000
 
+# STT settings
+speechTab:
+    conversationMode: true
+    advancedMode: true
+    speechToText:
+      engineSTT: "external"
+      languageSTT: "English (US)"
+      autoTranscribeAudio: true
+      decibelValue: -45
+      autoSendText: 0
+
 #Using openai whisper for STT
 speech:
   stt:
     openai:
       apiKey: '${OPENAI_API_KEY}'
       model: 'whisper-1'
-
-#
-#   stt:
-#     openai:
-#       url: ''
-#       apiKey: '${STT_API_KEY}'
-#       model: ''
 
 # rateLimits:
 #   fileUploads:

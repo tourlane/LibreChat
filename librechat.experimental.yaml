@@ -88,15 +88,15 @@ registration:
 #   refillAmount: 10000
 
 # STT settings
-speechTab:
-  conversationMode: true
-  advancedMode: true
-  speechToText:
-    engineSTT: "external"
-    languageSTT: "English (US)"
-    autoTranscribeAudio: true
-    decibelValue: -45
-    autoSendText: 0
+# speechTab:
+#   conversationMode: true
+#   advancedMode: true
+#   speechToText:
+#     engineSTT: "external"
+#     languageSTT: "English (US)"
+#     autoTranscribeAudio: true
+#     decibelValue: -45
+#     autoSendText: 0
 
 # Using openai whisper for STT
 speech:

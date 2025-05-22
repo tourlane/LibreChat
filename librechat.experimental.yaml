@@ -89,16 +89,16 @@ registration:
 
 # STT settings
 speechTab:
-    conversationMode: true
-    advancedMode: true
-    speechToText:
-      engineSTT: "external"
-      languageSTT: "English (US)"
-      autoTranscribeAudio: true
-      decibelValue: -45
-      autoSendText: 0
+  conversationMode: true
+  advancedMode: true
+  speechToText:
+    engineSTT: "external"
+    languageSTT: "English (US)"
+    autoTranscribeAudio: true
+    decibelValue: -45
+    autoSendText: 0
 
-#Using openai whisper for STT
+# Using openai whisper for STT
 speech:
   stt:
     openai:
@@ -154,7 +154,7 @@ actions:
 
 # Definition of custom endpoints
 endpoints:
- assistants:
+  assistants:
     # disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
     pollIntervalMs: 3000  # Polling interval for checking assistant updates
     timeoutMs: 180000  # Timeout for assistant operations
@@ -168,21 +168,21 @@ endpoints:
     # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
     # capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
   agents:
-  #   # (optional) Default recursion depth for agents, defaults to 25
+    # (optional) Default recursion depth for agents, defaults to 25
     recursionLimit: 50
-  #   # (optional) Max recursion depth for agents, defaults to 25
+    # (optional) Max recursion depth for agents, defaults to 25
     maxRecursionLimit: 100
-  #   # (optional) Disable the builder interface for agents
+    # (optional) Disable the builder interface for agents
     disableBuilder: false
-  #   # (optional) Agent Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
+    # (optional) Agent Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
     capabilities:
-    - "execute_code"
-    - "file_search"
-    - "actions"
-    - "tools"
-    - "artifacts"
-    - "ocr"
-    - "chain"
+      - "execute_code"
+      - "file_search"
+      - "actions"
+      - "tools"
+      - "artifacts"
+      - "ocr"
+      - "chain"
   # custom: []
     # # Groq Example
     # - name: 'groq'
@@ -287,7 +287,7 @@ fileConfig:
       totalSizeLimit: 50  # Maximum total size for all files in a single request in MB
       supportedMimeTypes:
         - "image/.*"
-        - "application/pdf" 
+        - "application/pdf"
         - "application/.*"
     openAI:
       disabled: false  # Disables file uploading to the OpenAI endpoint
@@ -301,5 +301,5 @@ fileConfig:
       fileSizeLimit: 30
   serverFileSizeLimit: 100  # Global server file size limit in MB
   avatarSizeLimit: 2  # Limit for user avatar image size in MB
-# # See the Custom Configuration Guide for more information on Assistants Config:
-# # https://www.librechat.ai/docs/configuration/librechat_yaml/object_structure/assistants_endpoint
+# See the Custom Configuration Guide for more information on Assistants Config:
+# https://www.librechat.ai/docs/configuration/librechat_yaml/object_structure/assistants_endpoint

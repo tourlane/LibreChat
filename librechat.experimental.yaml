@@ -288,7 +288,9 @@ fileConfig:
       supportedMimeTypes:
         - "image/.*"
         - "application/pdf"
+        - "application/msword"
         - "application/.*"
+        - "text/markdown"
     openAI:
       disabled: false  # Disables file uploading to the OpenAI endpoint
       fileLimit: 5

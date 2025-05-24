@@ -293,7 +293,7 @@ fileConfig:
         - "text/markdown"
     openAI:
       disabled: false  # Disables file uploading to the OpenAI endpoint
-      fileLimit: 5
+      fileLimit: 10
       fileSizeLimit: 50  # Maximum size for an individual file in MB
       totalSizeLimit: 50  # Maximum total size for all files in a single request in MB
     default:

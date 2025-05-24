@@ -282,7 +282,7 @@ endpoints:
 fileConfig:
   endpoints:
     assistants:
-      fileLimit: 5
+      fileLimit: 10
       fileSizeLimit: 50  # Maximum size for an individual file in MB
       totalSizeLimit: 50  # Maximum total size for all files in a single request in MB
       supportedMimeTypes:
@@ -299,7 +299,7 @@ fileConfig:
     default:
       totalSizeLimit: 50
     YourCustomEndpointName:
-      fileLimit: 5
+      fileLimit: 10
       fileSizeLimit: 30
   serverFileSizeLimit: 100  # Global server file size limit in MB
   avatarSizeLimit: 2  # Limit for user avatar image size in MB

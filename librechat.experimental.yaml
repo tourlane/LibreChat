@@ -127,10 +127,11 @@ actions:
 # Example MCP Servers Object Structure
 mcpServers:
   brave-search:
-    command: sh
+    command: npx
     args:
-      - -y
-      - "@modelcontextprotocol/server-brave-search"
+      - '--yes'
+      - '@modelcontextprotocol/server-brave-search'
+      - '-y'
     env:
       BRAVE_API_KEY: ${BRAVE_API_KEY}
 #   everything:

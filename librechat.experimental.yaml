@@ -129,8 +129,10 @@ mcpServers:
   brave-search:
     command: sh
     args:
-      - -c
-      - BRAVE_API_KEY=${BRAVE_API_KEY} npx -y brave-search-mcp
+      - -y
+      - @modelcontextprotocol/server-brave-search
+    env:
+      BRAVE_API_KEY: ${BRAVE_API_KEY}
 #   everything:
 #     # type: sse # type can optionally be omitted
 #     url: http://localhost:3001/sse

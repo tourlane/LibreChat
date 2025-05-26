@@ -130,7 +130,7 @@ mcpServers:
     command: sh
     args:
       - -y
-      - @modelcontextprotocol/server-brave-search
+      - "@modelcontextprotocol/server-brave-search"
     env:
       BRAVE_API_KEY: ${BRAVE_API_KEY}
 #   everything:

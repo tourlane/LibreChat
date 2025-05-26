@@ -125,7 +125,12 @@ actions:
     - "google.com"
 
 # Example MCP Servers Object Structure
-# mcpServers:
+mcpServers:
+  brave-search:
+    command: sh
+    args:
+      - -c
+      - BRAVE_API_KEY=${BRAVE_API_KEY} npx -y brave-search-mcp
 #   everything:
 #     # type: sse # type can optionally be omitted
 #     url: http://localhost:3001/sse

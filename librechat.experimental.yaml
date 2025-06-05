@@ -288,24 +288,42 @@ endpoints:
     #   modelDisplayLabel: 'Portkey'
     #   iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf
 fileConfig:
+
   endpoints:
     assistants:
       fileLimit: 10
       fileSizeLimit: 50  # Maximum size for an individual file in MB
       totalSizeLimit: 50  # Maximum total size for all files in a single request in MB
       supportedMimeTypes:
+        - "text/plain"
+        - "text/csv"
+        - "text/xml"
+        - "text/.*"
         - "image/.*"
         - "application/pdf"
         - "application/msword"
         - "application/.*"
-        - "text/.*"
-    openAI:
-      disabled: false  # Disables file uploading to the OpenAI endpoint
+        - "application/json"
+        - "application/xml"
+        - "application/octet-stream"
+        - "application/.*"
+    default:
       fileLimit: 10
       fileSizeLimit: 50  # Maximum size for an individual file in MB
       totalSizeLimit: 50  # Maximum total size for all files in a single request in MB
-    default:
-      totalSizeLimit: 50
+      supportedMimeTypes:
+        - "text/plain"
+        - "text/csv"
+        - "text/xml"
+        - "text/.*"
+        - "image/.*"
+        - "application/pdf"
+        - "application/msword"
+        - "application/.*"
+        - "application/json"
+        - "application/xml"
+        - "application/octet-stream"
+        - "application/.*"
     YourCustomEndpointName:
       fileLimit: 10
       fileSizeLimit: 30

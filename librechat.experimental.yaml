@@ -298,7 +298,7 @@ fileConfig:
         - "application/pdf"
         - "application/msword"
         - "application/.*"
-        - "text/markdown"
+        - "text/.*"
     openAI:
       disabled: false  # Disables file uploading to the OpenAI endpoint
       fileLimit: 10

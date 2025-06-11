@@ -134,6 +134,34 @@ mcpServers:
       - '-y'
     env:
       BRAVE_API_KEY: ${BRAVE_API_KEY}
+  atlassian:
+    command: uvx
+    transport: sse
+    args:
+      - 'mcp-atlassian'
+      - '--jira-url'
+      - '${JIRA_URL}'
+      - '--jira-username' 
+      - '${JIRA_USERNAME}'
+      - '--jira-token' 
+      - '${JIRA_TOKEN}'
+      - '--confluence-url' 
+      - '${CONFLUENCE_URL}'
+      - '--confluence-username' 
+      - '${CONFLUENCE_USERNAME}'
+      - '--confluence-token' 
+      - '${CONFLUENCE_TOKEN}'
+    env:
+      JIRA_URL: ${JIRA_URL}
+      JIRA_USERNAME: ${JIRA_USERNAME}
+      JIRA_TOKEN: ${JIRA_TOKEN}
+      CONFLUENCE_URL: ${CONFLUENCE_URL}
+      CONFLUENCE_USERNAME: ${CONFLUENCE_USERNAME}
+      CONFLUENCE_TOKEN: ${CONFLUENCE_TOKEN}
+
+
+
+
 #   everything:
 #     # type: sse # type can optionally be omitted
 #     url: http://localhost:3001/sse

@@ -139,18 +139,6 @@ mcpServers:
     transport: sse
     args:
       - 'mcp-atlassian'
-      - '--jira-url'
-      - '${JIRA_URL}'
-      - '--jira-username' 
-      - '${JIRA_USERNAME}'
-      - '--jira-token' 
-      - '${JIRA_TOKEN}'
-      - '--confluence-url' 
-      - '${CONFLUENCE_URL}'
-      - '--confluence-username' 
-      - '${CONFLUENCE_USERNAME}'
-      - '--confluence-token' 
-      - '${CONFLUENCE_TOKEN}'
     env:
       JIRA_URL: ${JIRA_URL}
       JIRA_USERNAME: ${JIRA_USERNAME}

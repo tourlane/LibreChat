@@ -2,7 +2,7 @@
 # https://www.librechat.ai/docs/configuration/librechat_yaml
 
 # Configuration version (required)
-version: 1.2.1
+version: 1.2.6
 
 # Cache settings: Set to true to enable caching
 cache: true
@@ -147,9 +147,16 @@ mcpServers:
       CONFLUENCE_URL: ${CONFLUENCE_URL}
       CONFLUENCE_USERNAME: ${CONFLUENCE_USERNAME}
       CONFLUENCE_API_TOKEN: ${CONFLUENCE_API_TOKEN}
-
-
-
+  slack:
+    command: npx
+    args:
+      - '-y'
+      - 'slack-mcp-server@latest'
+      - '--transport'
+      - 'stdio'
+    env:
+      SLACK_MCP_XOXC_TOKEN: ${SLACK_MCP_XOXC_TOKEN}           # set this in your env
+      SLACK_MCP_XOXD_TOKEN: ${SLACK_MCP_XOXD_TOKEN} # if verifying requests
 
 #   everything:
 #     # type: sse # type can optionally be omitted

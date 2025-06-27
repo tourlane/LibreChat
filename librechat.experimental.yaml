@@ -12,6 +12,7 @@ cache: true
 
 # Custom interface configuration
 interface:
+  web_search: true
   customWelcome: "Welcome to LibreChat! Enjoy your experience."
   # Privacy policy settings
   privacyPolicy:

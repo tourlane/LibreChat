@@ -9,10 +9,21 @@ cache: true
 
 # File strategy s3/firebase
 # fileStrategy: "s3"
-
+webSearch:
+  # Search Provider Configuration
+  serperApiKey: "${SERPER_API_KEY}" 
+ 
+  # Scraper Configuration
+  firecrawlApiKey: "${FIRECRAWL_API_KEY}"
+ 
+  # Reranker Configuration
+  jinaApiKey: "${JINA_API_KEY}"
+ 
+  # General Settings
+  safeSearch: 1 
 # Custom interface configuration
 interface:
-  web_search: true
+  webSearch: true
   customWelcome: "Welcome to LibreChat! Enjoy your experience."
   # Privacy policy settings
   privacyPolicy:
@@ -216,6 +227,7 @@ endpoints:
       - "artifacts"
       - "ocr"
       - "chain"
+      - "web_search" 
   # custom: []
     # # Groq Example
     # - name: 'groq'
